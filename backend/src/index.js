@@ -7,6 +7,7 @@ const os = require('os');
 const loginRoute = require('./routes/authRoutes/loginRoute/loginRoute');
 const registerRoute = require('./routes/authRoutes/registerRoute/registerRoute');
 const agentRoute = require('./routes/agentRoutes/agentRoute');
+const fetchAgentsRoute = require('./routes/agentRoutes/fetchAgents');
 const addTaskRoute = require('./routes/tasksRoutes/addTaskRoute');
 const getTasksRoute = require('./routes/tasksRoutes/getTasksRoute');
 const authMiddleware = require('./middleware/auth');
@@ -29,8 +30,22 @@ app.get('/', (req, res) => {
 app.use('/api/login', loginRoute);
 app.use('/api/register', registerRoute);
 app.use('/api/create-agent', authMiddleware, agentRoute);
+app.use('/api/get-agents', authMiddleware, fetchAgentsRoute);
 app.use('/api/add-tasks', authMiddleware, addTaskRoute);
 app.use('/api/get-tasks', authMiddleware, getTasksRoute);
+
+app.use('/api/protected', authMiddleware, (req, res) => {
+    if (req.user) {
+        return res.status(200).json({ success: true, user: req.user });
+    } else {
+        return res.status(401).json({ success: false, message: 'Unauthorized' });
+    }
+});
+
+app.use((err, req, res, next) => {
+    console.error('Unhandled error:', err);
+    res.status(500).json({ success: false, message: 'Internal server error', error: err.message });
+});
 
 function getServerIP() {
     const interfaces = os.networkInterfaces();
