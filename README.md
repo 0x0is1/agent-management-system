@@ -24,7 +24,7 @@ docker run -d --name agent-mongo -p 27017:27017 mongo:6.0
 2) Backend — install, configure, run
 
 ```cmd
-cd C:\Users\ASUS\codes\agent-management-system\backend
+cd agent-management-system\backend
 npm install
 ```
 
@@ -58,7 +58,7 @@ npm run generate
 3) Frontend — install, configure, run
 
 ```cmd
-cd C:\Users\ASUS\codes\agent-management-system\frontend
+cd agent-management-system\frontend
 npm install
 ```
 
@@ -83,7 +83,7 @@ The backend includes a `Dockerfile` which installs production dependencies and r
 Build the image from the `backend/` folder:
 
 ```cmd
-cd C:\Users\ASUS\codes\agent-management-system\backend
+cd agent-management-system\backend
 docker build -t agent-backend .
 ```
 
