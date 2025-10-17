@@ -1,0 +1,5 @@
+:root{--muted:#6b7280}
+.empty{border:1px dashed #e6edf3;border-radius:12px;padding:28px;text-align:center;color:var(--muted);background:#fff}
+.icon{font-size:36px;margin-bottom:8px}
+.title{font-weight:700;margin-bottom:6px}
+.msg{font-size:13px}

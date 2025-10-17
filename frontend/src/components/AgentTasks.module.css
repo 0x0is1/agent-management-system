@@ -1,0 +1,12 @@
+:root{--muted:#6b7280}
+.wrap{display:flex;gap:20px;align-items:flex-start}
+.left{width:260px}
+.right{flex:1}
+.loading{display:flex;align-items:center;gap:8px}
+.list{display:flex;flex-direction:column;gap:12px}
+
+@media (max-width: 820px){
+	.wrap{flex-direction:column}
+	.left{width:100%}
+	.right{width:100%}
+}

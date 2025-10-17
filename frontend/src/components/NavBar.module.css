@@ -1,0 +1,10 @@
+:root{--muted:#6b7280;--accent:#0f172a}
+
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;border-bottom:1px solid rgba(15,23,42,0.04);background:#fff}
+.left{display:flex;gap:12px;align-items:center}
+.logo{display:flex;align-items:center;gap:10px}
+.logoMark{border-radius:6px}
+.logoText{font-weight:700;color:var(--accent)}
+.right{display:flex;gap:12px;align-items:center}
+.user{color:var(--muted);font-size:14px}
+.logout{background:#111827;color:#fff;padding:8px 10px;border-radius:8px;border:0}

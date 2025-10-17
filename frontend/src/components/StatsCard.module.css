@@ -1,0 +1,5 @@
+:root{--muted:#6b7280}
+.wrap{border:1px solid #eef2f7;border-radius:10px;padding:12px;background:#fff}
+.row{display:flex;justify-content:space-between;gap:12px}
+.num{font-weight:800;font-size:20px}
+.label{font-size:13px;color:var(--muted)}

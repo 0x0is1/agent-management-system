@@ -1,0 +1,9 @@
+.backdrop{position:fixed;inset:0;background:rgba(2,6,23,0.45);display:flex;align-items:center;justify-content:center;padding:18px;animation:fadeIn 160ms ease}
+.content{background:#fff;padding:18px;border-radius:12px;min-width:320px;max-width:90%;box-shadow:0 20px 60px rgba(2,6,23,0.2);transform:scale(.98);opacity:0;animation:popIn 200ms cubic-bezier(.2,.8,.2,1) forwards}
+.title{font-weight:800;margin-bottom:6px}
+.message{color:#334155;margin-bottom:12px}
+.actions{text-align:right}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:0}
+
+@keyframes popIn{to{transform:scale(1);opacity:1}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}

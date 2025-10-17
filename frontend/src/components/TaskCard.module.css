@@ -1,0 +1,7 @@
+:root{--muted:#6b7280}
+.card{border-radius:12px;padding:14px;background:linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);box-shadow:0 12px 30px rgba(2,6,23,0.04);border:1px solid rgba(2,6,23,0.04)}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.title{font-weight:800;font-size:15px}
+.date{font-size:12px;color:var(--muted)}
+.body{font-size:14px;color:#111827;margin-bottom:10px}
+.footer{font-size:13px;color:var(--muted);display:flex;justify-content:flex-end}

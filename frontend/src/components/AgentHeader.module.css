@@ -1,0 +1,9 @@
+:root{--muted:#6b7280;--accent:#0f172a}
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.info{display:flex;gap:12px;align-items:center}
+.avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#6366F1,#06B6D4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+.name{font-weight:700}
+.role{font-size:13px;color:var(--muted)}
+.actions{display:flex;gap:8px}
+.primary{background:#111827;color:#fff;padding:8px 12px;border-radius:8px;border:0}
+.ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px}

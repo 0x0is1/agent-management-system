@@ -1,0 +1,47 @@
+:root{
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --muted: #6b7280;
+  --accent: #0f172a;
+  --card-shadow: 0 8px 30px rgba(2,6,23,0.06);
+}
+
+.page{
+  min-height:100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  display:flex;
+  flex-direction:column;
+}
+
+.nav{
+  height:64px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+  border-bottom:1px solid rgba(15,23,42,0.04);
+  background:transparent;
+}
+
+.logo{display:flex;align-items:center;gap:10px}
+.logoMark{background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;border-radius:8px;padding:8px 10px;font-weight:700;font-family:ui-sans-serif,system-ui}
+.logoText{font-weight:700;font-size:18px;color:var(--accent)}
+
+.logout{background:#fff;border:1px solid rgba(15,23,42,0.06);padding:8px 12px;border-radius:8px;color:var(--muted)}
+
+.container{max-width:1100px;margin:40px auto;display:grid;grid-template-columns:1fr 380px;gap:28px;padding:0 20px}
+.hero{padding:40px 20px}
+.title{font-size:34px;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 18px}
+.features{display:flex;flex-direction:column;gap:8px;padding-left:18px;margin:0;color:var(--muted)}
+
+.card{background:var(--panel);padding:22px;border-radius:12px;box-shadow:var(--card-shadow);align-self:start}
+.sub{color:var(--muted);margin-top:6px}
+
+.footer{text-align:center;color:var(--muted);padding:18px 0;margin-top:auto;border-top:1px solid rgba(15,23,42,0.03)}
+
+@media (max-width:900px){
+  .container{grid-template-columns:1fr;}
+  .hero{order:2}
+  .card{order:1}
+}

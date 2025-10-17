@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+:root{--accent:#0f172a;--muted:#6b7280}
+.wrap{font-family:Inter,system-ui,Segoe UI,Roboto}
+.uploadForm{display:flex;gap:12px;align-items:center}
+.fileLabel{display:flex;align-items:center;gap:12px;flex:1}
+.fileInput{display:none}
+.chooseBtn{background:#eef2ff;color:var(--accent);padding:8px 12px;border-radius:8px;border:0;font-weight:700;cursor:pointer}
+.fileName{color:var(--muted);font-size:13px}
+.uploadBtn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+.uploadBtn[disabled]{opacity:0.6;cursor:not-allowed}
+.error{color:#b91c1c;margin-top:8px}
+.result{margin-top:14px;background:#fff;padding:14px;border-radius:12px;border:1px solid rgba(2,6,23,0.04)}
+.resultWrap{display:flex;flex-direction:column;gap:12px}
+.resultFormArea{background:transparent}
+.resultListArea{background:transparent}
+.agentsList{display:flex;flex-direction:column;gap:12px;margin-top:12px}
+.agentBlock{padding:0;border-radius:10px;background:transparent;border:0;width:100%}
+.agentTitle{font-weight:700;padding:12px 14px;background:#fff;border-radius:10px;border:1px solid rgba(2,6,23,0.04);display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+.taskList{padding:12px;transition:all 220ms cubic-bezier(.2,.8,.2,1);overflow:hidden}
+.taskItem{font-size:14px;color:#0f172a;margin:12px 0;padding:12px;border-radius:10px;background:#f8fafc;border:1px solid rgba(2,6,23,0.04)}
+.taskName{font-weight:700}
+.taskPhone{color:var(--muted);margin-top:6px}
+.taskNotes{margin-top:8px;font-size:13px;color:var(--muted)}
+.taskDate{margin-top:8px;font-size:12px;color:rgba(0,0,0,0.45)}
+.empty{color:var(--muted);padding:16px}
+.panel{background:var(--card);padding:22px; margin: 10px 0 ;border-radius:12px;box-shadow:0 12px 36px rgba(2,6,23,0.06)}
+.panelHeader{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.agentBlock.open .taskList{max-height:2000px}
+.agentBlock .taskList{max-height:0}
